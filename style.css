@@ -1,0 +1,138 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f8ff;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    color: #fde68a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: solid 2px #facc15;
+    border-radius: 20px;
+    padding: 6px 16px;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #facc15;
+    color: #1e3a8a;
+}
+
+main {
+    padding: 20px;
+}
+
+.judul {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 15px;
+}
+
+.isi-grid {
+    border: solid 2px #1e3a8a;
+    border-top: solid 8px #facc15;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.isi-grid h2 {
+    color: #1e3a8a;
+}
+
+.ikon {
+    font-size: 50px;
+    margin: 0;
+}
+
+/* formulir */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    border: solid 2px #1e3a8a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border: solid 1px #1e3a8a;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #facc15;
+    color: #1e3a8a;
+}
+
+/* tampilan ipad mini */
+@media (min-width : 767px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+/* tampilan leptop */
+@media (min-width : 1030px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .isi-grid:hover {
+        background-color: #fef9c3;
+
+    }
+}
